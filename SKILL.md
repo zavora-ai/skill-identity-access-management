@@ -1,19 +1,11 @@
 ---
 name: identity-access-management
 description: Orchestrate identity and access management — user lookup, group membership, MFA verification, entitlement management, access requests, and emergency revocation. Use when looking up users, checking permissions, managing group membership, verifying MFA status, processing access requests, or revoking access.
-version: "1.0.0"
 license: Apache-2.0
-allowed-tools:
-  - lookup_user
-  - list_user_groups
-  - check_mfa
-  - verify_user
-  - list_entitlements
-  - request_access
-  - emergency_revoke
-  - lifecycle_task
-tags: [identity, security, access-control, governance, mfa]
+compatibility: Requires mcp-identity server connected.
+allowed-tools: [lookup_user, list_user_groups, check_mfa, verify_user, list_entitlements, request_access, emergency_revoke, lifecycle_task]
 metadata:
+  category: security
   author: Zavora AI
   mcp-server: mcp-identity
   revenue-impact: indirect
